@@ -10,3 +10,5 @@ Route::get('/', function () {
 
 
 Route::get('/emps', 'EmployeeController@index') -> name('employee-index');
+
+Route::get('/emps/{id}', 'EmployeeController@show') -> name('emps-show');

@@ -15,4 +15,11 @@ class EmployeeController extends Controller
         return view('pages.emps', compact('employees'));
 
     }
+
+    public function show($id){
+
+        $employee = Employee::findOrFail($id);
+        return view('pages.emp', compact('employee'));
+
+    }
 }
