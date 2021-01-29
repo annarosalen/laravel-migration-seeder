@@ -7,7 +7,7 @@ use Faker\Generator as Faker;
 
 $factory->define(Office::class, function (Faker $faker) {
     return [
-        'name' => ($faker ->word()),
+        'name' => ($faker ->city()),
         'address' => ($faker ->streetAddress()),
         'employees_count' =>($faker ->randomDigit())
     ];
