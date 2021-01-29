@@ -7,7 +7,7 @@ use Faker\Generator as Faker;
 
 $factory->define(Brand::class, function (Faker $faker) {
     return [
-        'name' => ($faker -> word()),
+        'name' => ($faker -> company()),
         'logo' => ($faker -> imageUrl()),
         'offices_count' => ($faker -> randomDigit())
     ];

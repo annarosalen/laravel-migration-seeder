@@ -22,4 +22,6 @@ class EmployeeController extends Controller
         return view('pages.emp', compact('employee'));
 
     }
+
+  
 }
