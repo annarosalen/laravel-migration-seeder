@@ -23,5 +23,23 @@ class EmployeeController extends Controller
 
     }
 
-  
+    public function create(){
+
+        return view('pages.emp-create');
+
+    }
+
+    public function store(Request $request){
+
+        $newEmp = new Employee;
+
+        $newEmp -> name = $request -> input('name');
+        $newEmp -> lastname = $request -> input('lastname');
+        $newEmp -> hire_date = $request -> input('hire_date');
+
+        $newEmp -> save();
+
+        return redirect() -> route('employees-index');
+
+    }
 }

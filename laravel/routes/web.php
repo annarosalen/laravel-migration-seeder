@@ -17,3 +17,6 @@ Route::get('/offices/{id}', 'OfficeController@show') -> name('offices-show');
 
 Route::get('/brands', 'BrandController@index') -> name('brands-index');
 Route::get('/brands/{id}', 'BrandController@show') -> name('brands-show');
+
+Route::get('/new/emp', 'EmployeeController@create') ->name('emp-create');
+Route::post('/new/emp/store', 'EmployeeController@store') ->name('emp-store');

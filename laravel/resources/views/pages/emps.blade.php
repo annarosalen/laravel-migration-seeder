@@ -3,6 +3,8 @@
 @section('content')
     <h1>Employees:</h1>
 
+    <a href="{{route('emp-create')}}">CREA NUOVO EMPLOYEE</a>
+
     <ul>
         @foreach ($employees as $employee)
 
